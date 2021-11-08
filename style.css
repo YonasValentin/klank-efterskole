@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: ;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-size: ;
+  font-family: ;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 6.25rem;
+}
+.navbar__logo {
+  width: 12.5rem;
+}
+.navbar__logo svg {
+  height: 100%;
+  width: 100%;
+}
+.navbar ul,
+.navbar__socials ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
