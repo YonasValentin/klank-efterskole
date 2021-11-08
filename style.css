@@ -33,6 +33,8 @@ button {
   padding: 1.25rem 6.25rem;
   background-color: var(--prim-color);
   text-transform: uppercase;
+  position: fixed;
+  width: 100%;
 }
 .navbar__logo {
   width: 12.5rem;
@@ -52,6 +54,7 @@ button {
 .navbar ul li a {
   color: var(--secound-color);
   text-decoration: none;
+  font-size: 18px;
 }
 .navbar__socials ul li {
   display: flex;
@@ -61,4 +64,5 @@ button {
 }
 .navbar__socials ul li a {
   color: var(--secound-color);
+  font-size: 18px;
 }
