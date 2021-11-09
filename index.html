@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+ 
   </head>
   <body>
     <div class="container">
@@ -133,14 +134,14 @@
       </section>
     </div>
     <script>
-       $(document).ready(function () {
+   $(document).ready(function () {
         $('.navbar li').hover(
         function () {
             //show submenu
-            $('ul', this).slideDown("fast");
+            $('ul', this).show();
         }, function () {
             //hide submenu
-            $('ul', this).slideUp("fast");
+            $('ul', this).hide();
         });
     });
     </script>
