@@ -64,10 +64,16 @@
               autoplay
               loop
               src="Bird-singing-early-in-the-morning.mp3"
+              id="audioVolume"
             ></audio>
           </div>
         </section>
       </section>
     </div>
+    <script type="text/javascript">
+      let audio = function (volume = 1) {
+        return document.getElementById("audioVolume").volume;
+      };
+    </script>
   </body>
 </html>
