@@ -40,12 +40,84 @@
             </svg>
           </div>
           <ul>
-            <li><a href="">livet på klank</a></li>
-            <li><a href="">fag</a></li>
-            <li><a href="">om skolen</a></li>
-            <li><a href="">viggo intra</a></li>
-            <li><a href="">kontakt os</a></li>
-            <li><a href="">tilmelding</a></li>
+            <li><a href="">livet på klank</a>
+            <ul>
+              <li><a href="#">Vi gør det uforglemmeligt</a></li>
+              <li><a href="#">Værelseskammerater</a></li>
+              <li><a href="#">Skema</a></li>
+              <li><a href="#">Skolens regler</a></li>
+              <li><a href="#">Mobbepolitik</a></li>
+              <li><a href="#">Skitur</a></li>
+              <li><a href="#">Social ansvarlighed</a></li>
+              <li><a href="#">Elevhold 2021/22</a></li>
+            </ul>
+          </li>
+            <li>
+              <a href="">Fag</a>
+            <ul>
+              <li><a href="#">Obligatoriske</a>
+              <ul>
+                <li><a href="#">9.Klasse</a></li>
+                <li><a href="#">10.Klasse</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Linjefag</a>
+              <ul>
+                <li><a href="#">Fodbold</a></li>
+                <li><a href="#"></a>Adventure</li>
+                <li><a href="#"></a>Cykling</li>
+                <li><a href="#"></a>Ridning</li>
+                <li><a href="#"></a>Dans</li>
+                <li><a href="#"></a>Kunst</li>
+                <li><a href="#"></a>Design</li>
+                <li><a href="#"></a>Musik</li>
+              </ul>
+              </li>
+              <li><a href="#">Valgfag</a>
+                <ul>
+                  <li><a href="#">Boglige</a></li>
+                  <li><a href="#"></a>Aktive</li>
+                  <li><a href="#"></a>Kreative</li>
+                  <li><a href="#"></a>Musiske</li>
+                  <li><a href="#"></a>Teater</li>
+                  <li><a href="#"></a>Naturvidenskabelige</li>
+                </ul>
+                </li>
+                <li><a href="#"></a>Klank international</li>
+                <li><a href="#"></a>esport</li>
+                <li><a href="#"></a>Vejledning</li>
+              </li>
+              <li><a href="#">Om skolen</a>
+              <ul>
+                <li><a href="#">Skolens historie</a></li>
+                <li><a href="#">150 års jubilærum i 2018</a></li>
+                <li><a href="#">Skolens personale</a></li>
+                <li><a href="#">Kostpolitik</a></li>
+                <li><a href="#">Økonomi</a></li>
+                <li><a href="#">Lov om åbenhed</a>
+                <ul>
+                  <li><a href="#">Værdiggrundlag og vedtægter</a></li>
+                  <li><a href="#">Elevernes evaluering 18/19</a></li>
+                  <li><a href="#">Personalets evaluering 18/19</a></li>
+                  <li><a href="#">Undervisningsmiljøet</a></li>
+                  <li><a href="#">Indholds- og årsplan</a></li>
+                </ul>
+              </li>
+                <li><a href="#">Bestyrelsen og skolekreds</a></li>
+                <li><a href="#">Værdiggrundlag</a></li>
+                <li><a href="#">Cookiepolitik</a></li>
+              </ul>
+              </li>
+              <li><a href="#">Viggo intra</a></li>
+              <li><a href="#">Kontakt os</a></li>
+              <li><a href="#">Tilmelding</a>
+              <ul>
+                <li><a href="#"></a>Tilmelding til et skoleår på efterskolen</li>
+                <li><a href="#">24-timer på klank efterskole</a></li>
+                <li><a href="#">Besøgsdage på klank efterskole</a></li>
+              </ul>
+              </li>
+            </ul>
           </ul>
           <div class="navbar__socials">
             <ul>
@@ -60,5 +132,17 @@
         <section></section>
       </section>
     </div>
+    <script>
+       $(document).ready(function () {
+        $('.navbar li').hover(
+        function () {
+            //show submenu
+            $('ul', this).slideDown("fast");
+        }, function () {
+            //hide submenu
+            $('ul', this).slideUp("fast");
+        });
+    });
+    </script>
   </body>
 </html>
