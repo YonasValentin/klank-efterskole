@@ -60,20 +60,21 @@
         <section class="section__1-container">
           <div class="video__audio">
             <video autoplay loop muted src="DJI_0008.mp4"></video>
-            <audio
-              autoplay
-              loop
-              src="Bird-singing-early-in-the-morning.mp3"
-              id="audioVolume"
-            ></audio>
+            <audio autoplay loop>
+              <source
+                src="Bird-singing-early-in-the-morning.mp3"
+                type="audio/mp3"
+              />
+            </audio>
+            <div class="video__overlay"></div>
           </div>
         </section>
       </section>
     </div>
     <script type="text/javascript">
-      let audio = function (volume = 1) {
-        return document.getElementById("audioVolume").volume;
-      };
+      // let audioAuto = function () {
+      //   let audio = document.getElementById("audioVolume").autoplay;
+      // };
     </script>
   </body>
 </html>
