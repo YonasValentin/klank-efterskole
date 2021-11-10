@@ -27,7 +27,7 @@ button {
 button {
   cursor: pointer;
 }
-nav {
+.nav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,6 +37,14 @@ nav {
   position: fixed;
   width: 1380px;
   z-index: 100;
+}
+.nav__logo {
+  width: 10rem;
+}
+.nav__socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 nav ul li {
   display: inline-block;
@@ -48,12 +56,12 @@ nav ul li a {
   font-size: 14px;
   padding: 15px 14px;
   transition: 0.3s linear;
+  text-decoration: none;
 }
 nav ul li:hover {
   background: #126d9b;
 }
 nav ul li ul {
-  border-bottom: 5px solid #2ba0db;
   display: none;
   position: absolute;
   width: 250px;
@@ -110,20 +118,32 @@ nav ul li ul li a:hover {
   top: 400px;
   left: 900px;
 }
+.hero__efterskole-button:hover {
+  background: #126d9b;
+}
 .hero__ridebane-button {
   position: absolute;
   top: 650px;
   left: 400px;
+}
+.hero__ridebane-button:hover {
+  background: #126d9b;
 }
 .hero__ridehal-button {
   position: absolute;
   top: 900px;
   left: 100px;
 }
+.hero__ridehal-button:hover {
+  background: #126d9b;
+}
 .hero__ridestald-button {
   position: absolute;
   top: 500px;
   left: 550px;
+}
+.hero__ridestald-button:hover {
+  background: #126d9b;
 }
 @keyframes pulse {
   0% {
