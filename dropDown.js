@@ -1,5 +1,5 @@
 // Closes dropdown onclick outside the box
-window.onclick = function(event) {
+window.hover = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
