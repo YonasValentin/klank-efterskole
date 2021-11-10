@@ -36,7 +36,7 @@ button {
   background-color: var(--prim-color);
   text-transform: uppercase;
   position: fixed;
-  width: 100%;
+  width: 1380px;
   z-index: 100;
 }
 .nav__logo {
