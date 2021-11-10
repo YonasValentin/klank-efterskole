@@ -36,6 +36,7 @@ button {
   text-transform: uppercase;
   position: fixed;
   width: 1380px;
+  z-index: 100;
 }
 .navbar__logo {
   width: 12.5rem;
@@ -74,7 +75,6 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 }
 .video__overlay {
   position: absolute;
@@ -94,9 +94,9 @@ button {
   height: 70px;
   border-radius: 50%;
   animation: pulse 2s infinite;
-  background-color: rgba(59, 196, 255, 0.7);
+  background-color: rgba(59, 196, 255, 1);
   cursor: pointer;
-  color: lightgray;
+  color: white;
   border: none;
 }
 .hero__efterskole-button {
@@ -130,3 +130,49 @@ button {
     -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
   }
 }
+
+/*=============================================
+=            Klank-efterskole-svg            =
+=============================================*/
+
+.e466f0be-6ccf-419c-a3d0-e6138bef764c {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+#b717b9e7-ed37-4ca7-b1ab-06802f4774f5 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  fill: white;
+  top: 18rem;
+  left: 43rem;
+}
+#b717b9e7-ed37-4ca7-b1ab-06802f4774f5:hover {
+  display: block;
+}
+/*=====  End of Klank-efterskole-svg  ======*/
+
+/*=============================================
+=            klank-efterskole-ridestald            =
+=============================================*/
+#b069ed78-c399-4f8b-8f04-ecb72821cca9 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 25rem;
+  left: 39.5rem;
+  fill: white;
+}
+.bc5a4d28-76ac-4c37-9767-8c643a9d7006 {
+  fill: none;
+}
+.ba9601e5-1b49-44a0-a24a-7415f9a1e9d9 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+/*=====  End of klank-efterskole-ridestald  ======*/
