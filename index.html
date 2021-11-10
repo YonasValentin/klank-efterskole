@@ -19,6 +19,7 @@
         <div class="nav__container">
           <div class="nav__logo">
             <svg
+              id="nav-home-klank"
               class="nav-logo"
               viewBox="0 0 239 56"
               fill="none"
@@ -849,11 +850,11 @@
           }
         );
       });
-      $("#nav-home").on("click", function () {
-          window.open("");
-      })
       $("#efterskole-btn").on("click", function () {
-        window.open("");
+        location.replace("https://www.biva.dk/opbevaring/reoler/reol/");
+      })
+      $("#nav-home-klank").on("click", function () {
+        location.replace("https://www.biva.dk/opbevaring/reoler/reol/");
       })
       $("#ridebane-btn").on("click", function () {
         window.open("");
@@ -862,8 +863,9 @@
         window.open("");
       })
       $("ridestald-btn").on("click", function () {
-        window.open("");
+        window.open("","");
       })
+
     </script>
   </body>
 </html>
