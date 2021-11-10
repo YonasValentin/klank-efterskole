@@ -20,12 +20,13 @@ input,
 button {
   font-size: ;
   font-family: ;
+  width: 100%;
+  height: 100vh;
 }
 
 button {
   cursor: pointer;
 }
-
 .navbar {
   display: flex;
   align-items: center;
@@ -34,7 +35,8 @@ button {
   background-color: var(--prim-color);
   text-transform: uppercase;
   position: fixed;
-  width: 100%;
+  width: 1380px;
+  z-index: 100;
 }
 .navbar__logo {
   width: 12.5rem;
@@ -66,3 +68,156 @@ button {
   color: var(--secound-color);
   font-size: 18px;
 }
+.video__audio video {
+  width: 1380px;
+  height: 1080px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video__overlay {
+  position: absolute;
+  top: 0;
+  width: 1380px;
+  height: 1080px;
+  object-fit: fill;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero__efterskole-button,
+.hero__ridebane-button,
+.hero__ridehal-button,
+.hero__ridestald-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  background-color: rgba(59, 196, 255, 1);
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.hero__efterskole-button {
+  position: absolute;
+  top: 400px;
+  left: 900px;
+}
+.hero__ridebane-button {
+  position: absolute;
+  top: 650px;
+  left: 400px;
+}
+.hero__ridehal-button {
+  position: absolute;
+  top: 900px;
+  left: 100px;
+}
+.hero__ridestald-button {
+  position: absolute;
+  top: 500px;
+  left: 550px;
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(59, 196, 255, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+/*=============================================
+=            Klank-efterskole-svg            =
+=============================================*/
+
+.fe31d9eb-f4f5-468d-a484-91bd347d50a2 {
+  fill: none;
+}
+.b3e2becc-999e-4c1d-aa0d-db328bbe0c4c {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+#af7c5496-b297-4d3d-b705-41f5982dec9f {
+  position: absolute;
+  width: 400px;
+  fill: white;
+  top: 14rem;
+  left: 32rem;
+  rotate: 13deg;
+}
+/*=====  End of Klank-efterskole-svg  ======*/
+
+/*=============================================
+=            klank-efterskole-ridestald            =
+=============================================*/
+#fc5c3aea-e5db-46f8-a677-8107a899b9df {
+  width: 400px;
+  position: absolute;
+  top: 19rem;
+  left: 13rem;
+  fill: white;
+}
+.a05be03d-2ad1-40e7-a148-e4560054b3c7 {
+  fill: none;
+}
+.ee641adb-c53f-434c-9b60-d9fe04e53fb8 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+/*=====  End of klank-efterskole-ridestald  ======*/
+
+/*=============================================
+=            klank-efterskole-ridebane            =
+=============================================*/
+
+.e4f81103-74ce-4e9c-8c2b-deecd39bdc88 {
+  fill: none;
+}
+.a8b4325d-3bed-465e-8dc9-7e941589b30f {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+#b85385f2-8005-427c-a25f-a5eb16e4edcc {
+  width: 400px;
+  position: absolute;
+  top: 37rem;
+  left: 31rem;
+  fill: white;
+  rotate: 15deg;
+}
+/*=====  End of klank-efterskole-ridebane  ======*/
+
+/*=============================================
+=            klank-efterskole-ridehal            =
+=============================================*/
+
+.efa8fb4b-e130-431d-a0fb-0f9fbdf822e3 {
+  fill: none;
+}
+.fc2a2add-0c59-4063-83f1-ab06c7225470 {
+  fill: none;
+  stroke: white;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+#a08ce68d-86f2-4374-86b5-cbe37ccc6905 {
+  width: 400px;
+  position: absolute;
+  top: 53rem;
+  left: 13rem;
+  fill: white;
+  rotate: 15deg;
+}
+/*=====  End of klank-efterskole-ridehal  ======*/
