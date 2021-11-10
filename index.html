@@ -70,7 +70,6 @@
               <div class="klank-efterskole">
                 <svg
                   id="af7c5496-b297-4d3d-b705-41f5982dec9f"
-                  data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 251.36 110.5"
                 >
@@ -208,7 +207,7 @@
                     transform="translate(-380.78 -501.3)"
                   />
                 </svg>
-                <button class="hero__efterskole-button">
+                <button id="efterskole-btn" class="hero__efterskole-button">
                   <i class="fa fa-plus"></i>
                 </button>
               </div>
@@ -397,14 +396,13 @@
                     transform="translate(-511.5 -501.76)"
                   />
                 </svg>
-                <button class="hero__ridebane-button">
+                <button id="ridebane-btn" class="hero__ridebane-button">
                   <i class="fa fa-plus"></i>
                 </button>
               </div>
               <div class="klank-ridehal">
                 <svg
                   id="a08ce68d-86f2-4374-86b5-cbe37ccc6905"
-                  data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 345.08 120.92"
                 >
@@ -538,7 +536,11 @@
                     transform="translate(-511.5 -483.94)"
                   />
                 </svg>
-                <button type="" class="hero__ridehal-button">
+                <button
+                  id="ridehal-btn"
+                  type="button"
+                  class="hero__ridehal-button"
+                >
                   <i class="fa fa-plus"></i>
                 </button>
               </div>
@@ -546,7 +548,6 @@
               <div class="klank-ridestald">
                 <svg
                   id="fc5c3aea-e5db-46f8-a677-8107a899b9df"
-                  data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 418.11 166.64"
                 >
@@ -721,6 +722,50 @@
         </section>
       </section>
     </div>
-    <script type="text/javascript"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#af7c5496-b297-4d3d-b705-41f5982dec9f").hide();
+        $("#efterskole-btn").hover(
+          function () {
+            $("#af7c5496-b297-4d3d-b705-41f5982dec9f").show();
+          },
+          function () {
+            $("#af7c5496-b297-4d3d-b705-41f5982dec9f").hide();
+          }
+        );
+        $("#b85385f2-8005-427c-a25f-a5eb16e4edcc").hide();
+        $("#ridebane-btn").hover(
+          function () {
+            $("#b85385f2-8005-427c-a25f-a5eb16e4edcc").show();
+          },
+          function () {
+            $("#b85385f2-8005-427c-a25f-a5eb16e4edcc").hide();
+          }
+        );
+        $("#a08ce68d-86f2-4374-86b5-cbe37ccc6905").hide();
+        $("#ridehal-btn").hover(
+          function () {
+            $("#a08ce68d-86f2-4374-86b5-cbe37ccc6905").show();
+          },
+          function () {
+            $("#a08ce68d-86f2-4374-86b5-cbe37ccc6905").hide();
+          }
+        );
+        $("#fc5c3aea-e5db-46f8-a677-8107a899b9df").hide();
+        $("#ridestald-btn").hover(
+          function () {
+            $("#fc5c3aea-e5db-46f8-a677-8107a899b9df").show();
+          },
+          function () {
+            $("#fc5c3aea-e5db-46f8-a677-8107a899b9df").hide();
+          }
+        );
+      });
+    </script>
   </body>
 </html>
