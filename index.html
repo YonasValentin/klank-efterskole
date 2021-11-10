@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="dropDown.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
- 
+ <link rel="stylesheet" href="myStyle.css">
   </head>
   <body>
-    <div class="container">
+    <div class="menuitems__container">
       <section class="header">
         <div class="navbar">
           <div class="navbar__logo">
@@ -40,86 +41,58 @@
               />
             </svg>
           </div>
-          <ul>
-            <li><a href="">livet på klank</a>
-            <ul>
-              <li><a href="#">Vi gør det uforglemmeligt</a></li>
-              <li><a href="#">Værelseskammerater</a></li>
-              <li><a href="#">Skema</a></li>
-              <li><a href="#">Skolens regler</a></li>
-              <li><a href="#">Mobbepolitik</a></li>
-              <li><a href="#">Skitur</a></li>
-              <li><a href="#">Social ansvarlighed</a></li>
-              <li><a href="#">Elevhold 2021/22</a></li>
-            </ul>
-          </li>
-            <li>
-              <a href="">Fag</a>
-            <ul>
-              <li><a href="#">Obligatoriske</a>
-              <ul>
-                <li><a href="#">9.Klasse</a></li>
-                <li><a href="#">10.Klasse</a></li>
-              </ul>
-              </li>
-              <li><a href="#">Linjefag</a>
-              <ul>
-                <li><a href="#">Fodbold</a></li>
-                <li><a href="#"></a>Adventure</li>
-                <li><a href="#"></a>Cykling</li>
-                <li><a href="#"></a>Ridning</li>
-                <li><a href="#"></a>Dans</li>
-                <li><a href="#"></a>Kunst</li>
-                <li><a href="#"></a>Design</li>
-                <li><a href="#"></a>Musik</li>
-              </ul>
-              </li>
-              <li><a href="#">Valgfag</a>
-                <ul>
-                  <li><a href="#">Boglige</a></li>
-                  <li><a href="#"></a>Aktive</li>
-                  <li><a href="#"></a>Kreative</li>
-                  <li><a href="#"></a>Musiske</li>
-                  <li><a href="#"></a>Teater</li>
-                  <li><a href="#"></a>Naturvidenskabelige</li>
-                </ul>
-                </li>
-                <li><a href="#"></a>Klank international</li>
-                <li><a href="#"></a>esport</li>
-                <li><a href="#"></a>Vejledning</li>
-              </li>
-              <li><a href="#">Om skolen</a>
-              <ul>
-                <li><a href="#">Skolens historie</a></li>
-                <li><a href="#">150 års jubilærum i 2018</a></li>
-                <li><a href="#">Skolens personale</a></li>
-                <li><a href="#">Kostpolitik</a></li>
-                <li><a href="#">Økonomi</a></li>
-                <li><a href="#">Lov om åbenhed</a>
-                <ul>
-                  <li><a href="#">Værdiggrundlag og vedtægter</a></li>
-                  <li><a href="#">Elevernes evaluering 18/19</a></li>
-                  <li><a href="#">Personalets evaluering 18/19</a></li>
-                  <li><a href="#">Undervisningsmiljøet</a></li>
-                  <li><a href="#">Indholds- og årsplan</a></li>
-                </ul>
-              </li>
-                <li><a href="#">Bestyrelsen og skolekreds</a></li>
-                <li><a href="#">Værdiggrundlag</a></li>
-                <li><a href="#">Cookiepolitik</a></li>
-              </ul>
-              </li>
-              <li><a href="#">Viggo intra</a></li>
-              <li><a href="#">Kontakt os</a></li>
-              <li><a href="#">Tilmelding</a>
-              <ul>
-                <li><a href="#"></a>Tilmelding til et skoleår på efterskolen</li>
-                <li><a href="#">24-timer på klank efterskole</a></li>
-                <li><a href="#">Besøgsdage på klank efterskole</a></li>
-              </ul>
-              </li>
-            </ul>
-          </ul>
+          <div class="dropdown">
+            <button onclick="toggleDropdown('popular_dropdown')" class="dropbtn">Livet på Klank</button>
+            <div id="popular_dropdown" class="dropdown-content">
+                <a href="#">Vi gør det uforglemmeligt</a>
+                <a href="#">Værelseskammerater</a>
+                <a href="#">Skema</a>
+                <a href="#">Skolens regler</a>
+                <a href="#">Mobbepolitik</a>
+                <a href="#">Skitur</a>
+                <a href="#">Social ansvarlighed</a>
+                <a href="#">Elevhold 2021/22</a>
+            </div>
+        </div>
+        <div class="menuitems__container">
+
+          <div class="dropdown">
+              <button onclick="toggleDropdown('fag_dropdown')" class="dropbtn">Fag</button>
+              <div id="fag_dropdown" class="dropdown-content">
+                  <a href="#">Obligatoriske
+                  <a href="#">Linjefag</a>
+                  <a href="#">Valgfag</a>
+                  <a href="#">Klank international</a>
+                  <a href="#">esport</a>
+                  <a href="#">Vejledning</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="toggleDropdown('skolen_dropdown')" class="dropbtn">Om skolen</button>
+            <div id="skolen_dropdown" class="dropdown-content">
+                <a href="">Skolens historie</a>
+                <a href="">150 års jubilærum i 2018</a>
+                <a href="">Skolens personale</a>
+                <a href="">Kostpolitik</a>
+                <a href="">Økonomi</a>
+                <a href="">Lov om åbenhed</a>
+                <a href="">Bestyrelsen og skolekreds</a>
+                <a href="">Værdigrundlag</a>
+                <a href="">Cookiepolitik</a>
+            </div>
+        </div>
+          <button class="dropbtn" onclick="location.href='#';">VIGGO INTRA</button>
+
+          <button class="dropbtn" onclick="location.href='#';">Kontakt os</button>
+          <div class="dropdown">
+            <button onclick="toggleDropdown('tilmelding_dropdown')" class="dropbtn">Tilmelding</button>
+            <div id="tilmelding_dropdown" class="dropdown-content">
+                <a href="">Tilmelding til et skoleår på efterskolen</a>
+                <a href="">24-timer på Klank Efterskolen</a>
+                <a href="">Besøgsdage på Klank Efterskole</a>
+            </div>
+        </div>
+      </div> 
           <div class="navbar__socials">
             <ul>
               <li>
@@ -133,18 +106,5 @@
         <section></section>
       </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-        $(document).ready(function () {
-        $('.navbar li').hover(
-        function () {
-            //show submenu
-            $('ul', this).show();
-        }, function () {
-            //hide submenu
-            $('ul', this).hide();
-        });
-    });
-    </script>
-  
   </body>
 </html>

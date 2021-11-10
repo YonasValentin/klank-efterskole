@@ -11,15 +11,15 @@
 }
 body {
   background: black;
-  color: ;
-  -webkit-font-smoothing: antialiased;
+  color:
+  -webkit-font-smoothing antialiased;
 }
 
 body,
 input,
 button {
-  font-size: ;
-  font-family: ;
+  font-size: 
+  font-family:
 }
 
 button {
