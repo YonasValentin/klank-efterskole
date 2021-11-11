@@ -36,7 +36,7 @@ button {
   background-color: var(--prim-color);
   text-transform: uppercase;
   position: fixed;
-  width: 1380px;
+  width: 100%;
   z-index: 100;
 }
 .nav__logo {
@@ -84,8 +84,8 @@ nav ul li ul li a:hover {
   background: #126d9b;
 }
 .video__audio video {
-  width: 1380px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -94,8 +94,8 @@ nav ul li ul li a:hover {
 .video__overlay {
   position: absolute;
   top: 0;
-  width: 1380px;
-  height: 1080px;
+  width: 100vw;
+  height: 100vh;
   object-fit: fill;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -117,24 +117,24 @@ nav ul li ul li a:hover {
 }
 .hero__efterskole-button {
   position: absolute;
-  top: 400px;
-  left: 900px;
+  top: 340px;
+  left: 1070px;
 }
 .hero__efterskole-button:hover {
   background: #126d9b;
 }
 .hero__ridebane-button {
   position: absolute;
-  top: 650px;
-  left: 400px;
+  top: 600px;
+  left: 600px;
 }
 .hero__ridebane-button:hover {
   background: #126d9b;
 }
 .hero__ridehal-button {
   position: absolute;
-  top: 900px;
-  left: 100px;
+  top: 700px;
+  left: 300px;
 }
 .hero__ridehal-button:hover {
   background: #126d9b;
@@ -142,7 +142,7 @@ nav ul li ul li a:hover {
 .hero__ridestald-button {
   position: absolute;
   top: 500px;
-  left: 550px;
+  left: 760px;
 }
 .hero__ridestald-button:hover {
   background: #126d9b;
@@ -176,8 +176,8 @@ nav ul li ul li a:hover {
   position: absolute;
   width: 400px;
   fill: white;
-  top: 14rem;
-  left: 32rem;
+  top: 9.5rem;
+  left: 41rem;
   rotate: 13deg;
 }
 /*=====  End of Klank-efterskole-svg  ======*/
@@ -188,8 +188,8 @@ nav ul li ul li a:hover {
 #fc5c3aea-e5db-46f8-a677-8107a899b9df {
   width: 400px;
   position: absolute;
-  top: 19rem;
-  left: 13rem;
+  top: 20rem;
+  left: 26rem;
   fill: white;
 }
 .a05be03d-2ad1-40e7-a148-e4560054b3c7 {
@@ -219,8 +219,8 @@ nav ul li ul li a:hover {
 #b85385f2-8005-427c-a25f-a5eb16e4edcc {
   width: 400px;
   position: absolute;
-  top: 37rem;
-  left: 31rem;
+  top: 34rem;
+  left: 43rem;
   fill: white;
   rotate: 15deg;
 }
@@ -242,8 +242,8 @@ nav ul li ul li a:hover {
 #a08ce68d-86f2-4374-86b5-cbe37ccc6905 {
   width: 400px;
   position: absolute;
-  top: 53rem;
-  left: 13rem;
+  top: 40rem;
+  left: 25rem;
   fill: white;
   rotate: 15deg;
 }
